@@ -72,6 +72,9 @@ class UMBViewController: UIViewController, UMBWeatherFetcherDelegate, UMBLocatio
         weatherTextLabel.text = "Getting your location..."
         temperatureLabel.text = ""
 
+        NSNotificationCenter.defaultCenter().addObserver(locationHelper, selector: "requestLocation",
+            name: UIApplicationDidBecomeActiveNotification, object: nil )
+
     }
 
     override func viewWillAppear(animated: Bool) {
