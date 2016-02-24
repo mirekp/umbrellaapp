@@ -49,4 +49,6 @@ Extensibility:
   - UI is implemented in Storyboard using auto-layout. The app is designed for iPhone, but it should be possible to extend UI to other devices (iPad)
   - Different weather services can be introduced. These can be added by implementing UMBWeatherDataSource protocol.
   - Openweather API params are parametrised. They can be easily changes (in case of changing API key, URL, API level,. etc.). After potential future update of API 
-  - Using UIStackView UI can be easily extended to display more information (temperature, wind). 
+  - Using UIStackView UI can be easily extended to display more information (temperature, wind).
+
+![alt text](https://raw.githubusercontent.com/mirekp/umbrellaapp/master/sunnyday.png "Screenshot")
