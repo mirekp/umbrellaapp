@@ -167,7 +167,6 @@ class UMBOpenWeatherDataSource: UMBWeatherDataSource {
     func processWeatherForecastResponse(response: NSDictionary, entries: Int) throws -> [ UMBWeatherData ] {
 
         assert(entries > 0, "Unexpected number of entries")
-        //DLog(response.debugDescription)
         var cityName: String?
         var weatherArray = [UMBWeatherData]()
         do {
